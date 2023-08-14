@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Discussion Forum</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #F5F8FA;
+      padding: 20px;
+    }
+
+    .discussion-header {
+      background-color: #1DA1F2;
+      color: #FFFFFF;
+      padding: 15px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .discussion-card {
+      background-color: #FFFFFF;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card-body h5 {
+      margin-bottom: 5px;
+    }
+
+    .card-body p {
+      margin-bottom: 10px;
+    }
+
+    .nested-reply {
+      background-color: #E8F5FD;
+      padding: 10px;
+      border-radius: 10px;
+      margin-top: 10px;
+      margin-left: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="discussion-header">
+    <h1>Discussion Forum</h1>
+    <p>Participate in course-specific discussions with your peers and instructors.</p>
+  </div>
+
+  <div class="container">
+    <div class="card discussion-card">
+      <div class="card-header">
+        <h5 class="card-title">Discussion Thread Title 1</h5>
+        <p class="card-subtitle mb-2 text-muted">Author: John Doe</p>
+      </div>
+      <div class="card-body">
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut sapien nec eros rhoncus placerat. Pellentesque feugiat turpis in facilisis aliquet. Donec aliquet, nisl non aliquet vulputate, velit lectus viverra lorem, id ullamcorper nunc dolor nec justo.</p>
+        <div class="nested-reply">
+          <div class="card-header">
+            <h6 class="card-title">Reply by Jane Smith</h6>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Vestibulum eget sem nec dolor rutrum lobortis. Sed malesuada efficitur iaculis. Donec in urna risus. Nullam ultrices, mi ac consectetur rhoncus, risus lectus dictum enim, eget feugiat purus turpis ac purus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card discussion-card">
+      <div class="card-header">
+        <h5 class="card-title">Discussion Thread Title 2</h5>
+        <p class="card-subtitle mb-2 text-muted">Author: Jane Smith</p>
+      </div>
+      <div class="card-body">
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut sapien nec eros rhoncus placerat. Pellentesque feugiat turpis in facilisis aliquet. Donec aliquet, nisl non aliquet vulputate, velit lectus viverra lorem, id ullamcorper nunc dolor nec justo.</p>
+      </div>
+    </div>
+    <!-- Additional discussion threads -->
+  </div>
+
+</body>
+</html>

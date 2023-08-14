@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To do List</title>
+    <style>
+        *{ 
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: gray;
+            /* padding-top: 50px; */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            /* max-width: 550px; */
+            width: 80%;
+            margin: 10px auto;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .nav-bar{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: rgb(100,34,210);
+            color: white;
+            border-radius: 5px 5px 0 0;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .nav-bar a{
+            color: white;
+            font-weight: lighter;
+        }
+
+        .btn{
+            background-color: rgb(100,34,210);
+            color: white;
+        }
+
+        .nav-bar p{
+            margin-top: 40px;
+        }
+
+        .log-out{
+            margin: 0;
+            padding-left: 50px;
+        }
+
+        .nav-bar .add-task{
+            margin-top: 50px;
+            border: 2px solid rgb(100,34,210);
+            font-size: medium;
+            border-radius: 15px;
+            padding: 10px;
+            background-color: white;
+            color: rgb(100,34,210)
+        }
+
+        .nav-bar .add-task:active{
+            background-color: rgb(100,34,210);
+            color: white;
+        }
+
+        .search-form{
+            padding: 20px 0 10px 5px;
+            
+        }
+
+        #search-area{
+            padding: 10px;
+            padding-right: 20px;
+            border-radius: 5px;
+            border: 2px solid gray;
+        }
+
+        .form-group .search-btn{
+            margin-left: 10px;
+            padding: 10px 15px 10px 15px;
+            border: none;
+            border-radius: 5px;
+        }
+       
+        .task-wrapper{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            align-items: center;
+            border-top: 1px solid rgb(100,34,210);
+        }
+
+        .task-item{
+            display: flex;
+        }
+
+        .task-item a{
+            margin-left: 10px;
+        }
+
+        .task-complete-icon{
+            height: 20px;
+            width: 20px;
+            background-color: rgb(105, 192, 105);
+            border-radius: 50%;
+        }
+
+        .task-incomplete-icon{
+            height: 20px;
+            width: 20px;
+            background-color: gray;
+            border-radius: 50%;
+        }
+
+        .delete-task{
+            color: red;
+            font-size: 22px;
+            font-weight: 900;
+            /* line-height: 0; */
+        }
+
+        .footer{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 15px 0 15px 0;
+            border-top: 1px solid rgb(100,34,210);
+        }
+
+        .footer button{
+            margin-top: 10px;
+            padding: 7px 30px 7px 30px;
+            border-radius: 50px;
+
+        }
+
+        #clear-completed{
+            background-color: rgb(100,34,210);
+            color: white;
+        }
+
+        #clear-all{
+            background-color: rgb(202, 38, 38);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div>
+                <h1>Hello Onimisi</h1>
+                <p>You have 3 incomplete tasks. Keep going!</p>
+            </div>
+            <div>
+                <h3 class="log-out"><a href="#">Logout</a></h3>
+                <a href="add_task.html"><div class="add-task">+ Add Task</div></a>
+            </div>
+        </div>
+        <form class="search-form" action="">
+            <div class="form-group">
+                <input type="search" name="" id="search-area">
+                <button class="btn search-btn" type="submit">Search</button>
+            </div>
+        </form>
+
+        <div class="task-items-wrap">
+            <div class="task-wrapper">
+                <div class="task-item">
+                    <div class="task-complete-icon">
+                    </div>
+                    <s><a href="#">Get groceries</a></s>
+                </div>
+                <a class="delete-task" href="delete_task.html">
+                    &#9747</a>
+            </div>
+
+            <div class="task-wrapper">
+                <div class="task-item">
+                    <div class="task-incomplete-icon">
+                    </div>
+                    <a href="#">Take Lucy out</a>
+                </div>
+                <a class="delete-task" href="delete_task.html">
+                    &#9747</a>
+            </div>
+
+            <div class="task-wrapper">
+                <div class="task-item">
+                    <div class="task-incomplete-icon">
+                    </div>
+                    <a href="#">Hang out with the boys</a>
+                </div>
+                <a class="delete-task" href="delete_task.html">
+                    &#9747</a>
+            </div>
+
+            <div class="task-wrapper">
+                <div class="task-item">
+                    <div class="task-incomplete-icon">
+                    </div>
+                    <a href="#">Tutorial with Bae</a>
+                </div>
+                <a class="delete-task" href="delete_task.html">
+                    &#9747</a>
+            </div>
+
+            <div class="task-wrapper">
+                <div class="task-item">
+                    <div class="task-complete-icon">
+                    </div>
+                    <s><a href="#">UEFA Final</a></s>
+                </div>
+                <a class="delete-task" href="delete_task.html">
+                    &#9747</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="#"><button id="clear-completed" type="submit" >Clear Completed</button></a>
+            <a href="#"><button id="clear-all" type="submit" >Clear all</button></a>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* css rule */
+/* selectors: h1*/
+/* declaration block: {} */
+/* declaration = property: value;  */
+
+/*h1{
+  color: blue;  
+}
+
+h2{
+  color: yellow;
+} 
+
+p{
+  color: purple;
+} */
+
+/* Selector grouping/Element selectors*/
+
+/* body{
+  color: blue;
+} */
+/* we want a different color for h1 and h2 */
+h1,h2{
+  color: red;
+}
+
+/* Using ID selectors... Always make sure id is unique */
+#Heading{
+  color: green;
+  background: black;
+}
+
+#Subheading{
+  color: red;
+  background-color: gray;  
+}
+
+/* Class selectors */
+.green{
+  color: green;
+}
+
+.red{
+  color: red;
+  background-color: indigo;
+}
+/* we can also have an id together with a class */
+#heading1{
+  font-size: 40px;
+/*  text-transform: lowercase; */
+}
+.lowercase{
+  text-transform: lowercase;
+}
+
+/*Using DIV and SPAN element; both are used for grouping ...Div for block and span for inline element */
+
+/*i commented this out bcos we have two div,we differentiated them with the class */
+/*div{
+  color: red;
+  background: green;
+} */
+
+span{
+  text-transform: uppercase;
+}
+
+/* INHERITANCE: operates on the principle that whatever style we add for the parent element in html, the children element are going to be inherited unless we specifically style the children element*/
+body{
+  color: orange;
+  font-family: monospace;
+  line-height: 1.5em;
+}
+div{
+  color: red;
+  border: 3px solid black;
+}
+h2{
+  color: rgb(147, 21, 231);
+}
+
+/* Last Rule And Specificity * Universal Selector */
+p{
+  color: blue;
+}
+.red{
+  color: red ;
+}
+/* Universal selector has least specificity */
+*{
+  color: greenyellow;
+}

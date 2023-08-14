@@ -1,0 +1,117 @@
+<style>
+  .discussion-card {
+    background-color: #F5F8FA;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .discussion-card .card-header {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  .discussion-card .card-body {
+    padding-top: 5px;
+  }
+
+  .discussion-card .card-body p {
+    margin-bottom: 0;
+  }
+
+  .discussion-card .card-subtitle {
+    color: #657786;
+  }
+
+  .discussion-card .card-link {
+    color: #1DA1F2;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+  .discussion-card .card-link:hover {
+    text-decoration: underline;
+  }
+
+  .nested-reply {
+    background-color: #E8F5FD;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+
+  .nested-reply .card-header {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  .nested-reply .card-body {
+    padding-top: 5px;
+  }
+
+  .nested-reply .card-body p {
+    margin-bottom: 0;
+  }
+</style>
+
+<div class="container mt-4">
+  <h2>Discussion Forum</h2>
+  <div class="discussion-card">
+    <div class="card-header">
+      <h5 class="card-title">Discussion Thread Title 1</h5>
+      <p class="card-subtitle mb-2 text-muted">Author: John Doe</p>
+    </div>
+    <div class="card-body">
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut sapien nec eros rhoncus placerat. Pellentesque feugiat turpis in facilisis aliquet. Donec aliquet, nisl non aliquet vulputate, velit lectus viverra lorem, id ullamcorper nunc dolor nec justo.</p>
+      <div class="nested-reply">
+        <div class="card-header">
+          <h6 class="card-title">Reply by Jane Smith</h6>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Vestibulum eget sem nec dolor rutrum lobortis. Sed malesuada efficitur iaculis. Donec in urna risus. Nullam ultrices, mi ac consectetur rhoncus, risus lectus dictum enim, eget feugiat purus turpis ac purus.</p>
+          <div class="nested-reply">
+            <div class="card-header">
+              <h6 class="card-title">Reply by John Doe</h6>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Fusce eu erat et risus finibus aliquet eu eu ex. Duis ullamcorper eu turpis in volutpat. Cras tristique purus sit amet mi consequat, vitae auctor nulla consectetur.</p>
+            </div>
+          </div>
+          <div class="nested-reply">
+            <div class="card-header">
+              <h6 class="card-title">Reply by Jane Smith</h6>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Quisque maximus eros quis lacus suscipit tristique. Vestibulum non ultrices justo. Integer ut convallis erat. Curabitur posuere odio id neque suscipit, ut bibendum nisl tincidunt.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="card-link">Reply</a>
+      <a href="#" class="card-link">React</a>
+    </div>
+  </div>
+  <div class="discussion-card">
+    <div class="card-header">
+      <h5 class="card-title">Discussion Thread Title 2</h5>
+      <p class="card-subtitle mb-2 text-muted">Author: Jane Smith</p>
+    </div>
+    <div class="card-body">
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut sapien nec eros rhoncus placerat. Pellentesque feugiat turpis in facilisis aliquet. Donec aliquet, nisl non aliquet vulputate, velit lectus viverra lorem, id ullamcorper nunc dolor nec justo.</p>
+      <div class="nested-reply">
+        <div class="card-header">
+          <h6 class="card-title">Reply by John Doe</h6>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Sed ac erat ac risus pharetra dictum. Vestibulum nec augue eget arcu ultrices ultrices. Nam volutpat libero vitae ante facilisis, non finibus sem tincidunt.</p>
+        </div>
+      </div>
+      <a href="#" class="card-link">Reply</a>
+      <a href="#" class="card-link">React</a>
+    </div>
+  </div>
+  <!-- Additional discussion threads -->
+</div>

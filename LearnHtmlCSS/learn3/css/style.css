@@ -1,0 +1,56 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-bar{
+    background-color: rgb(100, 34, 210);
+    padding: 10px;
+}
+
+.nav-bar a{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: tomato;
+}
+
+.nav-bar .nav-right{
+    float: right;
+    margin-right: 10px;
+}
+
+.post-card{
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border-bottom-style: dotted;
+    border-bottom-width: 5;
+}
+
+.post-card .post-image{
+    width: 90%;
+    border-radius: 30px;
+}
+
+.post-card h2,p{
+    text-align: center;
+}
+
+.post-card .post-date{
+    font-weight: 100;
+}
+
